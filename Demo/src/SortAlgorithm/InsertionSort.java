@@ -3,6 +3,18 @@ package SortAlgorithm;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*First Pass:
+( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, insert value '1' at value '5' position 
+( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 ), insert value '4' at value '5' position 
+( 1 4 5 2 8 ) -> ( 1 4 2 5 8 ) -> ( 1 2 4 5 8 ) 
+already Sorted
+ ( 1 2 4 5 8 ) one execution iterate for last element
+ 
+ // Worst case and average case complexity - O(n2)
+// Best case O(n)
+ */
+
+
 public class InsertionSort {
 	public static void main(String arg[])
 	{
@@ -41,7 +53,7 @@ public class InsertionSort {
 			}
 			System.out.println("Hole ="+hole);
 			data[hole]=value;
-			
+			System.out.println("data ="+Arrays.toString(data));
 		}
 	}
 	

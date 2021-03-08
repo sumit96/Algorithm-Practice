@@ -26,7 +26,6 @@ class MergeSort {
 		System.out.println("Sorted Array");
 		System.out.println(Arrays.toString(arrayData));
 	}
-	
 	public static void sortData(int[] data)
 	{
 		int size=data.length;
@@ -53,7 +52,9 @@ class MergeSort {
 		mergeSort(left, right, data);
 		
 	}
+	//( 5 1 4 2 8 ) - > l(5,1,4) r (2,8) -> (5,1),(4)(2,8) ->
 	
+	//(2,1)
 	public static void mergeSort(int[] left, int[] right, int[] array)
 	{
 		int lSize=left.length;
@@ -72,6 +73,7 @@ class MergeSort {
 				j++;
 			}
 			k++;
+			System.out.println("In All = "+Arrays.toString(array));
 		}
 		
 		
@@ -80,6 +82,8 @@ class MergeSort {
 			array[k]=left[i];
 			i++;
 			k++;
+			System.out.println("In left = "+Arrays.toString(array));
+			
 		}
 		
 		while(j<rSize)
@@ -87,6 +91,8 @@ class MergeSort {
 			array[k]=right[j];
 			j++;
 			k++;
+			System.out.println("In Right = "+Arrays.toString(array));
+			
 		}
 	}
 } 

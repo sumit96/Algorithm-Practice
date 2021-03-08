@@ -22,6 +22,9 @@ Third Pass:
 ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )
 ( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )*/
 
+// Worst case and average case complexity - O(n2)
+// Best case O(n)
+
 public class BubbleSort {
 	
 	public static void main(String arg[])

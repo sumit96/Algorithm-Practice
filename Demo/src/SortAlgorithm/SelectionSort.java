@@ -3,6 +3,16 @@ package SortAlgorithm;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*First Pass:
+( 5 1 4 2 8 ) –> ( 1 5 4 2 8 ), Here, Initially 0th index is minimum then then 1st index contains minimum value 
+( 1 5 4 2 8 ) –>  ( 1 2 4 5 8 ), Swap 1st position with 0th index , Now 3rd index have minimum value
+already sorted after 3rd index with 1st index
+complete the iteration
+*/
+
+// Worst case and average case complexity - O(n2)
+// Best case O(n)
+
 public class SelectionSort {
 	
 	public static void main(String arg[])
@@ -40,6 +50,7 @@ public class SelectionSort {
 			int temp=data[i];
 			data[i]=data[iMin];
 			data[iMin]=temp;
+			System.out.println(Arrays.toString(data));
 		}
 		
 		
