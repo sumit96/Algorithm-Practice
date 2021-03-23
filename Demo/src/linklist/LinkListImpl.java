@@ -9,6 +9,7 @@ public class LinkListImpl {
 		// TODO Auto-generated constructor stub
 		this.item=item;
 		this.node=node;
+		
 	}
 	
 
